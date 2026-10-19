@@ -20,92 +20,94 @@ BOT_NAME = "ហ្គេមស្លូត - KH"
 
 START_TEXT = (
     f"សូមស្វាគមន៍មកកាន់ {BOT_NAME}!\n\n"
-    "Your simple guide to slot-game symbols, reels, paylines, and features.\n\n"
-    "Tap a button below to explore. Information and entertainment only."
+    "ស្វែងយល់អំពីនិមិត្តសញ្ញា ស្គ្រីនវិល បន្ទាត់ឈ្នះ និងមុខងារផ្សេងៗ "
+    "ក្នុងហ្គេមស្លូត តាមរយៈការណែនាំងាយៗ។\n\n"
+    "សូមចុចប៊ូតុងខាងក្រោម ដើម្បីជ្រើសរើសប្រធានបទ។\n\n"
+    "សម្រាប់ព័ត៌មាន និងចំណេះដឹងប៉ុណ្ណោះ។"
 )
 
 PAGES = {
     "info": (
         f"{BOT_NAME}\n\n"
-        "A simple guide to slot-game terminology and mechanics.\n\n"
-        "• Learn about common symbols\n"
-        "• Understand reels and paylines\n"
-        "• Explore bonus features and probability\n\n"
-        "This bot does not offer betting, real-money play, prizes, or cash-outs."
+        "បូតនេះផ្តល់ព័ត៌មានអំពីពាក្យបច្ចេកទេស និងរបៀបដំណើរការរបស់ហ្គេមស្លូត។\n\n"
+        "• ស្វែងយល់អំពីនិមិត្តសញ្ញាទូទៅ\n"
+        "• យល់ដឹងអំពីស្គ្រីនវិល និងបន្ទាត់ឈ្នះ\n"
+        "• ស្វែងយល់អំពីមុខងារបន្ថែម និងប្រូបាប៊ីលីតេ\n\n"
+        "បូតនេះមិនផ្តល់សេវាភ្នាល់ ការលេងដោយប្រើប្រាក់ពិត រង្វាន់ ឬការដកប្រាក់ទេ។"
     ),
     "symbols": (
-        "🎨 SLOT SYMBOLS\n\n"
-        "Symbols are pictures or icons displayed on the reels. Common types include:\n\n"
-        "🍒 Fruit — classic themed icons\n"
-        "🔔 Bell — a traditional slot symbol\n"
-        "⭐ Star — a common themed symbol\n"
-        "7️⃣ Sevens — often used in classic-style games\n"
-        "🃏 Wild — may substitute for other symbols, depending on the rules\n"
-        "❓ Scatter — may trigger a feature in some games\n\n"
-        "Always check the rules for the specific game; symbols do not have universal values."
+        "🎨 និមិត្តសញ្ញាក្នុងហ្គេមស្លូត\n\n"
+        "និមិត្តសញ្ញា គឺជារូបភាព ឬរូបតំណាងដែលបង្ហាញនៅលើស្គ្រីនវិល។ ឧទាហរណ៍៖\n\n"
+        "🍒 ផ្លែឈើ — រូបតំណាងដែលគេឃើញក្នុងហ្គេមបែបបុរាណ\n"
+        "🔔 កណ្ដឹង — និមិត្តសញ្ញាបែបបុរាណមួយ\n"
+        "⭐ ផ្កាយ — និមិត្តសញ្ញាដែលប្រើក្នុងប្រធានបទផ្សេងៗ\n"
+        "7️⃣ លេខប្រាំពីរ — ប្រើជាញឹកញាប់ក្នុងហ្គេមបែបបុរាណ\n"
+        "🃏 Wild — អាចជំនួសនិមិត្តសញ្ញាផ្សេងៗបាន អាស្រ័យលើច្បាប់ហ្គេម\n"
+        "❓ Scatter — អាចបើកមុខងារពិសេសក្នុងហ្គេមខ្លះៗ\n\n"
+        "ត្រូវពិនិត្យច្បាប់របស់ហ្គេមនីមួយៗជានិច្ច ព្រោះនិមិត្តសញ្ញាមិនមានតម្លៃដូចគ្នាគ្រប់ហ្គេមទេ។"
     ),
     "reels": (
-        "🎰 REELS & LINES\n\n"
-        "Reels are the columns where symbols appear. A game may use 3, 5, or another number of reels.\n\n"
-        "• Payline: a pattern that can count a symbol combination\n"
-        "• Ways-to-win: a system that counts matching symbols across adjacent reels\n"
-        "• Grid: the full arrangement of visible symbols\n\n"
-        "Each game has its own rules. Previous results do not predict future results."
+        "🎰 ស្គ្រីនវិល និងបន្ទាត់\n\n"
+        "ស្គ្រីនវិល គឺជាជួរឈរដែលបង្ហាញនិមិត្តសញ្ញា។ ហ្គេមអាចមាន ៣, ៥ ឬចំនួនផ្សេងទៀត។\n\n"
+        "• បន្ទាត់ឈ្នះ (Payline)៖ លំនាំដែលហ្គេមប្រើដើម្បីពិនិត្យការផ្គូផ្គងនិមិត្តសញ្ញា\n"
+        "• វិធីឈ្នះ (Ways-to-win)៖ វិធីរាប់និមិត្តសញ្ញាដែលត្រូវគ្នាតាមស្គ្រីនវិលជាប់គ្នា\n"
+        "• ក្រឡា (Grid)៖ ការរៀបចំនិមិត្តសញ្ញាទាំងអស់ដែលមើលឃើញ\n\n"
+        "ហ្គេមនីមួយៗមានច្បាប់ផ្ទាល់ខ្លួន។ លទ្ធផលមុនៗមិនអាចទាយលទ្ធផលបន្ទាប់បានទេ។"
     ),
     "bonus": (
-        "✨ BONUS FEATURES\n\n"
-        "Some games include extra mechanics such as:\n\n"
-        "• Free-spin rounds\n"
-        "• Wild symbols with special behavior\n"
-        "• Scatter-triggered features\n"
-        "• Multipliers or expanding symbols\n\n"
-        "Availability and rules vary by game. A bonus feature does not guarantee a particular outcome."
+        "✨ មុខងារបន្ថែម\n\n"
+        "ហ្គេមខ្លះអាចមានមុខងារបន្ថែម ដូចជា៖\n\n"
+        "• ជុំបង្វិលឥតគិតថ្លៃ (Free Spins)\n"
+        "• និមិត្តសញ្ញា Wild ដែលមានរបៀបដំណើរការពិសេស\n"
+        "• មុខងារដែលបើកដោយនិមិត្តសញ្ញា Scatter\n"
+        "• មេគុណ ឬនិមិត្តសញ្ញាដែលពង្រីកទំហំ\n\n"
+        "មុខងារ និងច្បាប់អាស្រ័យលើហ្គេមនីមួយៗ។ មុខងារបន្ថែមមិនធានាលទ្ធផលណាមួយឡើយ។"
     ),
     "paylines": (
-        "📐 PAYLINES EXPLAINED\n\n"
-        "A payline is a predefined path across reels that a game checks for symbol combinations. "
-        "Some games use fixed lines, some let players select lines, and others use ways-to-win or "
-        "cluster systems instead. Read the game's information screen to see which system it uses."
+        "📐 ការយល់ដឹងអំពីបន្ទាត់ឈ្នះ\n\n"
+        "បន្ទាត់ឈ្នះ (Payline) គឺជាផ្លូវដែលបានកំណត់ទុក ដើម្បីឱ្យហ្គេមពិនិត្យការផ្គូផ្គងនិមិត្តសញ្ញានៅលើស្គ្រីនវិល។ "
+        "ហ្គេមខ្លះមានបន្ទាត់ថេរ ហ្គេមខ្លះអាចជ្រើសរើសបន្ទាត់បាន ហើយហ្គេមផ្សេងទៀតប្រើប្រព័ន្ធ Ways-to-win ឬការផ្គូផ្គងជាក្រុមក្រឡា។ "
+        "សូមអានព័ត៌មានរបស់ហ្គេម ដើម្បីដឹងថាវាប្រើប្រព័ន្ធណា។"
     ),
     "rng": (
-        "🎲 RANDOMNESS & FAIR EXPECTATIONS\n\n"
-        "Many digital slot games use a random number generator (RNG) to determine outcomes. "
-        "In properly designed RNG games, spins are independent: a previous result does not make "
-        "a win due or predict the next result. This bot cannot predict results or guarantee wins."
+        "🎲 ភាពចៃដន្យ និងការរំពឹងទុកត្រឹមត្រូវ\n\n"
+        "ហ្គេមស្លូតឌីជីថលជាច្រើនប្រើម៉ាស៊ីនបង្កើតលេខចៃដន្យ (RNG) ដើម្បីកំណត់លទ្ធផល។ "
+        "ក្នុងហ្គេម RNG ដែលរចនាបានត្រឹមត្រូវ ការបង្វិលនីមួយៗឯករាជ្យពីគ្នា៖ លទ្ធផលមុនមិនមានន័យថាលទ្ធផលឈ្នះត្រូវតែកើតឡើងបន្ទាប់ ឬអាចទាយលទ្ធផលបន្ទាប់បានទេ។ "
+        "បូតនេះមិនអាចទាយលទ្ធផល ឬធានាការឈ្នះបានឡើយ។"
     ),
     "help": (
-        "ℹ️ HOW TO USE THIS BOT\n\n"
-        "Tap a menu button to read about a topic. You can also use these commands:\n"
-        "/start — open the main menu\n"
-        "/info — about this bot\n"
-        "/symbols — symbol guide\n"
-        "/reels — reels and lines\n"
-        "/help — show this help\n\n"
-        "For information and entertainment only. No betting, real-money play, prizes, or cash-outs."
+        "ℹ️ របៀបប្រើបូតនេះ\n\n"
+        "ចុចប៊ូតុងក្នុងម៉ឺនុយ ដើម្បីអានប្រធានបទដែលអ្នកចាប់អារម្មណ៍។ អ្នកក៏អាចប្រើពាក្យបញ្ជាខាងក្រោម៖\n"
+        "/start — បើកម៉ឺនុយមេ\n"
+        "/info — ព័ត៌មានអំពីបូតនេះ\n"
+        "/symbols — មគ្គុទ្ទេសក៍អំពីនិមិត្តសញ្ញា\n"
+        "/reels — ព័ត៌មានអំពីស្គ្រីនវិល និងបន្ទាត់\n"
+        "/help — បង្ហាញជំនួយ\n\n"
+        "សម្រាប់ព័ត៌មាន និងចំណេះដឹងប៉ុណ្ណោះ។ មិនមានការភ្នាល់ ការលេងដោយប្រើប្រាក់ពិត រង្វាន់ ឬការដកប្រាក់ទេ។"
     ),
 }
 
 MENU_KEYBOARD = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("🎨 Symbols", callback_data="symbols"),
-        InlineKeyboardButton("🎰 Reels & Lines", callback_data="reels"),
+        InlineKeyboardButton("🎨 និមិត្តសញ្ញា", callback_data="symbols"),
+        InlineKeyboardButton("🎰 ស្គ្រីនវិល", callback_data="reels"),
     ],
     [
-        InlineKeyboardButton("✨ Bonus Features", callback_data="bonus"),
-        InlineKeyboardButton("📐 Paylines", callback_data="paylines"),
+        InlineKeyboardButton("✨ មុខងារបន្ថែម", callback_data="bonus"),
+        InlineKeyboardButton("📐 បន្ទាត់ឈ្នះ", callback_data="paylines"),
     ],
     [
-        InlineKeyboardButton("🎲 RNG & Randomness", callback_data="rng"),
-        InlineKeyboardButton("ℹ️ About", callback_data="info"),
+        InlineKeyboardButton("🎲 ភាពចៃដន្យ", callback_data="rng"),
+        InlineKeyboardButton("ℹ️ អំពីបូត", callback_data="info"),
     ],
-    [InlineKeyboardButton("❔ Help", callback_data="help")],
+    [InlineKeyboardButton("❔ ជំនួយ", callback_data="help")],
 ])
 
 BACK_KEYBOARD = InlineKeyboardMarkup([
-    [InlineKeyboardButton("🏠 Main Menu", callback_data="menu")],
+    [InlineKeyboardButton("🏠 ម៉ឺនុយមេ", callback_data="menu")],
     [
-        InlineKeyboardButton("⬅️ Symbols", callback_data="symbols"),
-        InlineKeyboardButton("➡️ Reels & Lines", callback_data="reels"),
+        InlineKeyboardButton("⬅️ និមិត្តសញ្ញា", callback_data="symbols"),
+        InlineKeyboardButton("➡️ ស្គ្រីនវិល", callback_data="reels"),
     ],
 ])
 
@@ -131,7 +133,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         return
     page = query.data
     if page not in PAGES and page != "menu":
-        await query.answer("Unknown menu option.", show_alert=True)
+        await query.answer("មិនស្គាល់ជម្រើសនេះទេ។", show_alert=True)
         return
     await show_page(update, context, page)
 
@@ -161,12 +163,18 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 async def post_init(application: Application) -> None:
     await application.bot.set_my_commands([
-        BotCommand("start", "Open the main menu"),
-        BotCommand("info", "About this bot"),
-        BotCommand("symbols", "Open the symbol guide"),
-        BotCommand("reels", "Learn about reels and lines"),
-        BotCommand("help", "Show help"),
+        BotCommand("start", "បើកម៉ឺនុយមេ"),
+        BotCommand("info", "ព័ត៌មានអំពីបូតនេះ"),
+        BotCommand("symbols", "អានអំពីនិមិត្តសញ្ញា"),
+        BotCommand("reels", "អានអំពីស្គ្រីនវិល និងបន្ទាត់"),
+        BotCommand("help", "បង្ហាញជំនួយ"),
     ])
+    await application.bot.set_my_description(
+        "ស្វែងយល់អំពីនិមិត្តសញ្ញា ស្គ្រីនវិល បន្ទាត់ឈ្នះ និងរបៀបដំណើរការរបស់ហ្គេមស្លូត។ សម្រាប់ព័ត៌មាន និងចំណេះដឹងប៉ុណ្ណោះ។"
+    )
+    await application.bot.set_my_short_description(
+        "ព័ត៌មាន និងចំណេះដឹងអំពីហ្គេមស្លូត។"
+    )
 
 
 def main() -> None:
