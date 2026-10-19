@@ -16,7 +16,7 @@ logging.basicConfig(
 logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
-BOT_NAME = "ហ្គេមស្លូត - KH"
+BOT_NAME = "Khmer Slot Guide - KH"
 
 START_TEXT = (
     f"សូមស្វាគមន៍មកកាន់ {BOT_NAME}!\n\n"
@@ -90,7 +90,7 @@ PAGES = {
 MENU_KEYBOARD = InlineKeyboardMarkup([
     [
         InlineKeyboardButton("🎨 និមិត្តសញ្ញា", callback_data="symbols"),
-        InlineKeyboardButton("🎰 ស្គ្រីនវិល", callback_data="reels"),
+        InlineKeyboardButton("ស្គ្រីនវិល និងរបៀបដំណើរការ", callback_data="reels"),
     ],
     [
         InlineKeyboardButton("✨ មុខងារបន្ថែម", callback_data="bonus"),
@@ -162,6 +162,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 
 async def post_init(application: Application) -> None:
+    await application.bot.set_my_name(BOT_NAME)
     await application.bot.set_my_commands([
         BotCommand("start", "បើកម៉ឺនុយមេ"),
         BotCommand("info", "ព័ត៌មានអំពីបូតនេះ"),
@@ -170,10 +171,10 @@ async def post_init(application: Application) -> None:
         BotCommand("help", "បង្ហាញជំនួយ"),
     ])
     await application.bot.set_my_description(
-        "ស្វែងយល់អំពីនិមិត្តសញ្ញា ស្គ្រីនវិល បន្ទាត់ឈ្នះ និងរបៀបដំណើរការរបស់ហ្គេមស្លូត។ សម្រាប់ព័ត៌មាន និងចំណេះដឹងប៉ុណ្ណោះ។"
+        "ព័ត៌មានទូទៅជាភាសាខ្មែរ អំពីហ្គេមស្លត រួមមាននិមិត្តសញ្ញា ស្គ្រីនវិល ច្បាប់ និងមុខងាររបស់ហ្គេម។ សម្រាប់ការអប់រំ និងចំណេះដឹងប៉ុណ្ណោះ។"
     )
     await application.bot.set_my_short_description(
-        "ព័ត៌មាន និងចំណេះដឹងអំពីហ្គេមស្លូត។"
+        "ព័ត៌មានទូទៅ និងចំណេះដឹងអំពីហ្គេមស្លត ជាភាសាខ្មែរ។"
     )
 
 
