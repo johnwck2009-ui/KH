@@ -1,13 +1,26 @@
 # ហ្គេមស្លូត - KH
 
-A standard Telegram bot that shares educational information about slot-game symbols, reels, and mechanics. It is **not** a Telegram Mini App and does not provide betting, real-money play, prizes, or cash-outs.
+A standard Telegram bot with clickable inline buttons and educational pages about slot-game symbols, reels, paylines, bonus features, and randomness. It is **not** a Telegram Mini App and does not provide betting, real-money play, prizes, or cash-outs.
+
+## Interactive menu
+
+Send `/start` to display buttons for:
+- 🎨 Symbols
+- 🎰 Reels & Lines
+- ✨ Bonus Features
+- 📐 Paylines
+- 🎲 RNG & Randomness
+- ℹ️ About
+- ❔ Help
+
+Each button opens a topic page. Topic pages include a Main Menu button and quick navigation buttons.
 
 ## Commands
 
-- `/start` — Start the bot
+- `/start` — Open the main menu
 - `/info` — About the bot
 - `/symbols` — Learn about common slot symbols
-- `/reels` — Learn how reels and paylines work
+- `/reels` — Learn how reels and lines work
 - `/help` — Show available commands
 
 ## Run locally
@@ -37,7 +50,7 @@ A standard Telegram bot that shares educational information about slot-game symb
 
 ## Keep it running
 
-Deploy the project to a Python-compatible hosting service and add `TELEGRAM_BOT_TOKEN` as a private environment secret. Run command: `python bot.py`. A continuously running worker is needed for polling.
+Deploy the project to a Python-compatible hosting service and add `TELEGRAM_BOT_TOKEN` as a private environment secret. Run command: `python bot.py`. A continuously running worker is needed for polling. If already deployed, redeploy/restart the service after pulling the latest commit so the new buttons become available.
 
 ## Telegram profile text
 
