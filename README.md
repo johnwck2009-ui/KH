@@ -1,59 +1,59 @@
 # ហ្គេមស្លូត - KH
 
-A standard Telegram bot with clickable inline buttons and educational pages about slot-game symbols, reels, paylines, bonus features, and randomness. It is **not** a Telegram Mini App and does not provide betting, real-money play, prizes, or cash-outs.
+បូត Telegram ធម្មតាដែលមានប៊ូតុងចុចបាន និងទំព័រព័ត៌មានអំពីនិមិត្តសញ្ញា ស្គ្រីនវិល បន្ទាត់ឈ្នះ មុខងារបន្ថែម និងភាពចៃដន្យក្នុងហ្គេមស្លូត។ វាមិនមែនជា Telegram Mini App ទេ ហើយមិនផ្តល់ការភ្នាល់ ការលេងដោយប្រើប្រាក់ពិត រង្វាន់ ឬការដកប្រាក់ទេ។
 
-## Interactive menu
+## ម៉ឺនុយដែលអាចចុចបាន
 
-Send `/start` to display buttons for:
-- 🎨 Symbols
-- 🎰 Reels & Lines
-- ✨ Bonus Features
-- 📐 Paylines
-- 🎲 RNG & Randomness
-- ℹ️ About
-- ❔ Help
+ផ្ញើ `/start` ដើម្បីបង្ហាញប៊ូតុង៖
+- 🎨 និមិត្តសញ្ញា
+- 🎰 ស្គ្រីនវិល
+- ✨ មុខងារបន្ថែម
+- 📐 បន្ទាត់ឈ្នះ
+- 🎲 ភាពចៃដន្យ
+- ℹ️ អំពីបូត
+- ❔ ជំនួយ
 
-Each button opens a topic page. Topic pages include a Main Menu button and quick navigation buttons.
+ប៊ូតុងនីមួយៗបើកទំព័រព័ត៌មានតាមប្រធានបទ។ នៅក្នុងទំព័រនីមួយៗ មានប៊ូតុងត្រឡប់ទៅម៉ឺនុយមេ និងប៊ូតុងសម្រាប់បើកប្រធានបទផ្សេងទៀត។
 
-## Commands
+## ពាក្យបញ្ជា
 
-- `/start` — Open the main menu
-- `/info` — About the bot
-- `/symbols` — Learn about common slot symbols
-- `/reels` — Learn how reels and lines work
-- `/help` — Show available commands
+- `/start` — បើកម៉ឺនុយមេ
+- `/info` — ព័ត៌មានអំពីបូត
+- `/symbols` — ស្វែងយល់អំពីនិមិត្តសញ្ញាទូទៅ
+- `/reels` — ស្វែងយល់អំពីស្គ្រីនវិល និងបន្ទាត់
+- `/help` — បង្ហាញពាក្យបញ្ជាដែលអាចប្រើបាន
 
-## Run locally
+## ដំណើរការលើកុំព្យូទ័ររបស់អ្នក
 
-1. Create a Telegram bot using [@BotFather](https://t.me/BotFather).
-2. Copy the bot token from BotFather. Keep it private; do not commit it to GitHub.
-3. Install Python 3.10 or newer.
-4. Install dependencies:
+1. បង្កើតបូត Telegram តាមរយៈ [@BotFather](https://t.me/BotFather)។
+2. ចម្លង token ពី BotFather ហើយរក្សាទុកជាសម្ងាត់។ កុំដាក់ token នៅក្នុង GitHub។
+3. ដំឡើង Python ជំនាន់ 3.10 ឬថ្មីជាងនេះ។
+4. ដំឡើង dependencies៖
 
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Set the token as an environment variable.
+5. កំណត់ token ជា environment variable។
 
-   macOS/Linux:
+   macOS/Linux៖
    ```bash
    export TELEGRAM_BOT_TOKEN="paste-your-token-here"
    python bot.py
    ```
 
-   Windows PowerShell:
+   Windows PowerShell៖
    ```powershell
    $env:TELEGRAM_BOT_TOKEN="paste-your-token-here"
    python bot.py
    ```
 
-## Keep it running
+## រក្សាបូតឱ្យដំណើរការជាបន្តបន្ទាប់
 
-Deploy the project to a Python-compatible hosting service and add `TELEGRAM_BOT_TOKEN` as a private environment secret. Run command: `python bot.py`. A continuously running worker is needed for polling. If already deployed, redeploy/restart the service after pulling the latest commit so the new buttons become available.
+ដាក់គម្រោងនេះលើសេវា hosting ដែលគាំទ្រ Python ហើយបន្ថែម `TELEGRAM_BOT_TOKEN` ជា secret ឯកជន។ ប្រើពាក្យបញ្ជា `python bot.py`។ ត្រូវការសេវា worker ដែលដំណើរការជាបន្តបន្ទាប់សម្រាប់ polling។ ប្រសិនបើបានដាក់ឱ្យដំណើរការរួចហើយ សូម deploy ឬ restart សេវាក្រោយពេលទាញយក commit ថ្មី ដើម្បីឱ្យការកែប្រែថ្មីមានប្រសិទ្ធភាព។
 
-## Telegram profile text
+## អត្ថបទព័ត៌មានរបស់បូត
 
-**Description:** Learn about slot games, symbols, reels, and game mechanics in one place.
+**Description:** ស្វែងយល់អំពីនិមិត្តសញ្ញា ស្គ្រីនវិល បន្ទាត់ឈ្នះ និងរបៀបដំណើរការរបស់ហ្គេមស្លូត។ សម្រាប់ព័ត៌មាន និងចំណេះដឹងប៉ុណ្ណោះ។
 
-**About:** Slot game information and facts.
+**About:** ព័ត៌មាន និងចំណេះដឹងអំពីហ្គេមស្លូត។
